@@ -1,0 +1,16 @@
+parameters:
+    sylius.database.driver:           %database_driver%
+    sylius.database.host:             %database_host%
+    sylius.database.port:             %database_port%
+    sylius.database.name:             %database_name%
+    sylius.database.path:             %database_path%
+    sylius.database.user:             %database_user%
+    sylius.database.password:         %database_password%
+
+    sylius.mailer.transport:          %mailer_transport%
+    sylius.mailer.host:               %mailer_host%
+    sylius.mailer.port:               %mailer_port%
+    sylius.mailer.user:               %mailer_user%
+    sylius.mailer.password:           %mailer_password%
+
+    sylius.secret:                    %secret%

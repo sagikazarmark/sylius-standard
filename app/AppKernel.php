@@ -1,6 +1,6 @@
 <?php
 
-use Symfony\Component\HttpKernel\Kernel;
+use Sylius\Bundle\CoreBundle\Kernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends Kernel
@@ -8,15 +8,6 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
-            new Symfony\Bundle\TwigBundle\TwigBundle(),
-            new Symfony\Bundle\MonologBundle\MonologBundle(),
-            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
-            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Liip\MonitorBundle\LiipMonitorBundle(),
 
@@ -28,13 +19,12 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            $bundles[] = new Fidry\PsyshBundle\PsyshBundle();
-            $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
+//            $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
             $bundles[] = new Hautelook\AliceBundle\HautelookAliceBundle();
             $bundles[] = new Hal\Bundle\PhpMetricsCollector\PhpMetricsCollectorBundle();
         }
 
-        return $bundles;
+        return array_merge(parent::registerBundles(), $bundles);
     }
 
     public function getRootDir()

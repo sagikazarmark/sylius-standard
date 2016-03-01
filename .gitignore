@@ -49,3 +49,11 @@
 /web/twitter.png
 /web/yandex-*.png
 /web/yandex-browser-manifest.json
+
+
+# Sylius
+/web/assets/*
+!web/assets/font
+!web/assets/img
+/web/css
+/web/js
