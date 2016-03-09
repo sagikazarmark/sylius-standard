@@ -32,7 +32,6 @@
 /npm-debug.log
 /src/AppBundle/Resources/public/
 
-
 # Favicons
 /app/Resources/views/favicons.html.twig
 /web/android-chrome-*.png
