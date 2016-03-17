@@ -1,4 +1,4 @@
-server "dev.symfony.com", user: "fabien", roles: [:app, :web]
+server "dev.sylius.org", user: "pawel", roles: [:app, :web]
 
 set :composer_install_flags, "--no-interaction --quiet --optimize-autoloader"
 
