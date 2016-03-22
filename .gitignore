@@ -1,6 +1,7 @@
 # General
-/.vagrant/
+/.env*
 /.idea/
+/.vagrant/
 /build/
 .DS_Store
 
@@ -21,17 +22,11 @@
 /vendor/
 /web/bundles/
 
-# Capistrano
-/.env*
-/app/deploy/secret/
-/log/
-
 # Node - Bower - Gulp
 /bower_components/
 /node_modules/
 /npm-debug.log
 /src/AppBundle/Resources/public/
-
 
 # Favicons
 /app/Resources/views/favicons.html.twig
